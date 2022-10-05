@@ -265,7 +265,6 @@ header {
 img.mainstart{
     width: 100%;
     position: absolute;
-    bottom: -230px;
 }
 
 /* donate-img */
@@ -499,6 +498,24 @@ p.semidescription {
     background: url(../img/메인/프레임/뉴스존\ 제목.png) no-repeat;
     background-position-x: center;
     background-position-y: 280px;
+}
+
+.newsflex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsflex>div{
+    width: 380px;
+    height: 640px;
+    background-color: white;
+    border: 1px solid #e7a335;
+}
+
+.newsflex .imagearea img{
+    width: 378px;
+    height: auto;
+    text-align: center;
 }
 
 /*========== footer ========== */
