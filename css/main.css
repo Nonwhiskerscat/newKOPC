@@ -168,6 +168,16 @@ header {
 }
 
 /* intro */
+@keyframes intro{
+    from{
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
+}
+
 .intro{
     margin-top: 40px;
 }
@@ -226,7 +236,6 @@ header {
     margin: 50px auto 0;
     width: 84.49275362318841%;
     text-align: center;
-    z-index: 1;
 }
 .usualflexmenu {
     display: flex;
@@ -251,35 +260,245 @@ header {
 }
 
 
+
+/*========== main ========== */
 img.mainstart{
+    width: 100%;
     position: absolute;
     bottom: -230px;
 }
 
-/*========== main ========== */
-
 /* donate-img */
-.donate-img{
+.donationer{
     width: 100%;
     display: flex;
     position: relative;
+    background-color: red;
 }
 
+.donate-img{
+    position: absolute;
+    top: 150px;
+}
 
-
-.donate-img img:nth-child(1){
+.donate-img img:first-child{
+    position: absolute;
     opacity: 28%;
 }
 
-.donate-img img:last-child{
+.donate-img img:nth-child(2){
     position: absolute;
-    right: -120px;
+    left: 1060px;
     top: -40px;
 }
 
+
 /*donate*/
+
 .donate{
+    margin-top: 30px;
+    position: relative;
 }
 
+.donate h2 .wait{
+    font-size: 120px;
+    color: orange;
+}
+
+.donate h3{
+    display: inline;
+    font-size: 48px;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    font-weight: 500;
+}
+
+.donate p {
+    margin-top: 110px;
+    font-size: 28px;
+    line-height: 60px;
+}
+
+.donate .p_donate{
+    display:inline-block;
+    font-size: 48px;
+    font-weight: 700;
+    color: #e7a335;
+    line-height: 90px;
+}
+
+.donate .p_donate:last-child{
+    text-indent: 400px;
+}
+
+.donate-button{
+    margin-top: 20px;
+    display: flex;
+    width: 580px;
+    height: 61px;
+    justify-content: space-between;
+    color: white;
+}
+
+.donate-button .godonate {
+    width: 280px;
+    background-color: #ff9e00;
+    font-size: 32px;
+    font-weight: 700;
+    border: 0;
+}
+
+.donate-button .goadopt {
+    width: 280px;
+    background-color: #7d7d7d;
+    font-size: 32px;
+    font-weight: 700;
+    border: 0;
+}
+
+.donate-button button:hover:first-child{
+    background-color: #ff7300;
+}
+
+.donate-button button:hover:last-child{
+    background-color: #5f5f5f;
+}
+
+/*semititle, semidescription*/
+h2.semititle{
+    font-size: 76px;
+    line-height: 100px;
+    font-weight: 500;
+    text-align: center;
+    color: #e7a335;
+}
+
+p.semidescription {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+}
+
+/*challenges*/ 
+
+.challenges{
+    margin-top: 400px;
+}
+
+.challenges-flex{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.challenges-flex>section{
+    text-align: center;
+    width: 380px;
+    height: 679px;
+    background: url(../img/메인/역할/역할.png);
+}
+
+.challenges-flex>section>div{
+    margin-top: 50px;
+
+}
+
+.challenges-flex>section img{
+    width: 374px;
+    height: auto;
+    position: relative;
+    background-color: #ff7300;
+}
+
+.challenges-flex>section h3{
+    font-weight: 500;
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.challenges-flex>section .work_textbox{
+    margin-top: 90px;
+    width: 374px;
+    height: 240px;
+    margin: 30px auto 0;
+    padding: 20px 30px;
+    text-align: justify;
+    line-height: 30px;
+    background-color: rgba(231,163,53,0.5);
+}
+
+.challenges-flex>section .work_textbox p{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/*nyanzone*/
+.nyanzone{
+    margin-top: 150px;
+    background: url(../img/기타/메인2부분\(다크\).png) no-repeat;
+    background-size: 100%;
+}
+
+/*photozone*/
+.photozone {
+    padding-top: 600px;
+    background: url(../img/메인/프레임/뉴스존\ 제목.png) no-repeat;
+    background-position-x: center;
+    background-position-y: 580px;
+}
+
+.photobox {
+    position: relative;
+    text-align: center;
+    margin-top: 70px;
+    width: 100%;
+    height: 340px;
+    background-color: rgba(63,63,63,0.72);
+}
+
+.photobox ul{
+    margin: 0 auto;
+    padding-top: 35px;
+    display: flex;
+    width: 1180px;
+    justify-content: space-between;
+}
+
+.pagemap{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    display: flex;
+    width: 254px;
+    justify-content: space-between;
+}
+
+
+.photoframe {
+    width: 180px;
+    height: 230px;
+    background-color: #e7a335;
+}
+
+.photoframe .photoinfo {
+    opacity: 0;
+}
+
+.photobutton{
+    display: none;
+}
+
+/*newszone*/
+.newszone {
+    padding-top: 300px;
+    background: url(../img/메인/프레임/뉴스존\ 제목.png) no-repeat;
+    background-position-x: center;
+    background-position-y: 280px;
+}
 
 /*========== footer ========== */
