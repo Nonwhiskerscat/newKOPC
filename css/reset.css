@@ -8,7 +8,7 @@
 
     html, 
     body {
-        font: 16px '맑은 고딕';
+        font: 16px '210 GureumGothic 050';
         color: #fff;
     }
 
@@ -31,7 +31,7 @@
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 0px;
     }
 
     h2 {
