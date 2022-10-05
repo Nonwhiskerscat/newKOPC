@@ -441,6 +441,8 @@ p.semidescription {
     margin-top: 150px;
     background: url(../img/기타/메인2부분\(다크\).png) no-repeat;
     background-size: 100%;
+    width: 100%;
+    height: 3200px;
 }
 
 /*photozone*/
@@ -595,30 +597,26 @@ p.semidescription {
 }
 
 .newsflex .informarea time{
+    margin-top: 5px;
     width: 80px;
+    font-size: 18px;
 }
+
 
 .newsflex .informarea .newsindex{
     display: flex;
     justify-content: space-between;
-    width: 120px;
+    width: 110px;
 }
 
-.newsflex .informarea .newsindex {
+.newsflex .informarea .newsindex div{
+    margin-top: 5px;
+    text-align: right;
+    width: 40px;
     display: flex;
     justify-content: space-between;
-    width: 120px;
 }
 
-.newsflex .informarea .newsindex{
-    display: flex;
-    justify-content: space-between;
-    width: 120px;
-}
-
-.newsflex .informarea .newsindex p{
-    margin-left: 10px;
-}
 
 .newszone .pagemap{
     display: none;
@@ -627,5 +625,23 @@ p.semidescription {
 .newszone .newsbutton{
     display: none;
 }
+
+/*community*/
+.cagit {
+    width: 100%;
+    height: 1200px;
+    background: url(../img/메인/커뮤니티/커뮤니티\ 배경.png) no-repeat;
+    background-size: 100%;
+}
+
+.agit-flex-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+
+
 
 /*========== footer ========== */
