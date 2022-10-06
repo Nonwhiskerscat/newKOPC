@@ -70,14 +70,11 @@ header {
 
 /* snslist */
 .snslist {
-    position: absolute;
-    right: 0px;
-    top: 0px;
+    width: 150px;
 }
 
 .snslist>ul {
     display: flex;
-    width: 9.78260869565217%;
     justify-content: space-between;
 }
 
@@ -92,6 +89,7 @@ header {
     top: 65px;
     display: flex;
     width: 1380px;
+    line-height: 35px;
     justify-content: space-between;
 }
 
@@ -641,7 +639,12 @@ p.semidescription {
 
 }
 
-
+.agit-flex-box>div{
+    width: 30.43478260869565%;
+    height: 610px;
+    background-color: black;
+    border: 1px solid #7d7d7d;
+}
 
 
 /*========== footer ========== */
