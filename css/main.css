@@ -525,7 +525,7 @@ p.semidescription {
     align-items: center;
     text-align: center;
     z-index: 2;
-    transform: translateY(-160px);
+    transform: translateY(-170px);
 }
 
 .photozone .pagemap{
@@ -665,12 +665,6 @@ p.semidescription {
     justify-content: space-between;
 }
 
-
-.newszone .pagemap{
-    display: none;
-}
-
-
 .newszone .pagemap{
     position: absolute;
     bottom: 15px;
@@ -690,7 +684,7 @@ p.semidescription {
     align-items: center;
     text-align: center;
     z-index: 2;
-    transform: translateY(-350px);
+    transform: translateY(-375px);
 }
 
 /*community*/
@@ -884,7 +878,7 @@ p.semidescription {
     align-items: center;
     text-align: center;
     z-index: 2;
-    transform: translateY(-190px);
+    transform: translateY(-200px);
 }
 
 /*footer-alert*/
