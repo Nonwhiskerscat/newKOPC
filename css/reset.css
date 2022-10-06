@@ -36,19 +36,41 @@
 
     h2 {
         font-size: 36px;
+        font-weight: normal;
     }
 
     h3 {
         font-size: 36px;
+        font-weight: normal;
     }
 
     h4 {
         font-size: 18px;
+        font-weight: normal;
     }
 
     p {
         font-size: 16px;
     }
+
+    strong {
+        font-weight: normal;
+    }
+
+    address {
+        text-decoration: none;
+        font-size: 16px;
+        font: 16px '210 GureumGothic 030';
+        color: white;
+    }
+
+    button,input {
+        font-family: '210 GureumGothic 030';
+        border: 0;
+        background: none;
+        color: white
+    }
+
 
 
     header, 

@@ -15,12 +15,11 @@
     padding: 0 10px;
     margin: 0 auto;
     position: relative;
-    background-color: aqua;
 }
 
 .wrapper {
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -30,7 +29,7 @@ header {
     height: 1050px;
     width: 100%;
     background: url(../img/헤더/메인이미지/메인\(다크\).png) no-repeat;
-    background-size: 100%;
+    background-position: center;
 }
 
 /* mainlogo */
@@ -40,7 +39,9 @@ header {
 
 /* ldmode-snslist*/
 .ldmode-snslist{
-    width: 100%;
+    position: absolute;
+    top: 15px;
+    width: 1380px;
     display: flex;
     justify-content: space-between;
 }
@@ -104,7 +105,7 @@ header {
     width: 100%;
     height: 35px;
     border: none;
-    background: none;
+    
     color: white;
     border-bottom: 1px solid white;
     padding-left: 30px;
@@ -124,7 +125,7 @@ header {
 
 .search img:last-child{
     position: absolute;
-    top: 16.5px;
+    top: 17px;
     right: 0;
     width: 25%;
     height: auto;
@@ -183,7 +184,7 @@ header {
 
 .intro h2{
     font-size: 28px;
-    font-weight: normal;
+    
 }
 
 .intro h2 .h2_strong{
@@ -215,7 +216,7 @@ header {
     font-family: '210 GureumGothic 070';
     color: #e7a335;
     text-indent: 160px;
-    font-weight: normal;
+    
 }
 
 .intro p.members{
@@ -259,7 +260,11 @@ header {
     color:white;
 }
 
-
+img.startmain{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
 /*========== main ========== */
 img.mainstart{
@@ -272,25 +277,9 @@ img.mainstart{
     width: 100%;
     display: flex;
     position: relative;
-    background-color: red;
+    background: url(../img/메인/후원입양/후원고양이\(다크\).png) no-repeat;
+    background-position: center;
 }
-
-.donate-img{
-    position: absolute;
-    top: 280px;
-}
-
-.donate-img img:first-child{
-    position: absolute;
-    opacity: 28%;
-}
-
-.donate-img img:nth-child(2){
-    position: absolute;
-    left: 1060px;
-    top: -40px;
-}
-
 
 /*donate*/
 
@@ -324,7 +313,7 @@ img.mainstart{
     font-family: '210 GureumGothic 070';;
     color: #e7a335;
     line-height: 90px;
-    font-weight: normal;
+    
 }
 
 .donate .p_donate:last-child{
@@ -438,9 +427,10 @@ p.semidescription {
 .nyanzone{
     margin-top: 150px;
     background: url(../img/기타/메인2부분\(다크\).png) no-repeat;
-    background-size: 100%;
-    width: 100%;
+    max-width: 100%;
+    background-position-x: center;
     height: 3200px;
+    
 }
 
 /*photozone*/
@@ -527,6 +517,11 @@ p.semidescription {
     height: 640px;
     background-color: white;
     border: 1px solid #e7a335;
+    transition: transform 0.5s;
+}
+
+.newsflex>div:hover{
+    transform: scale(103%);
 }
 
 .newsflex .profilearea {
@@ -573,7 +568,7 @@ p.semidescription {
 }
 
 .newsflex .contentarea h4 {
-    font-weight: normal;
+    
     font-family: '210 GureumGothic 070';
 }
 
@@ -629,22 +624,347 @@ p.semidescription {
     width: 100%;
     height: 1200px;
     background: url(../img/메인/커뮤니티/커뮤니티\ 배경.png) no-repeat;
-    background-size: 100%;
+    background-position: center;
 }
 
 .agit-flex-box {
     display: flex;
-    width: 100%;
     justify-content: space-between;
-
+    width: 100%;
+    margin-top: 80px;
 }
 
-.agit-flex-box>div{
+.agit-flex-box>div.agitbox{
     width: 30.43478260869565%;
     height: 610px;
     background-color: black;
-    border: 1px solid #7d7d7d;
+
+}
+
+.agit-flex-box .agittitle {
+    height: 140px;
+    line-height: 140px;
+    box-shadow: 0 10px 10px -10px #3f3f3f;
+
+}
+
+.agitbox:first-child .agittitle {
+    background: url(../img/메인/커뮤니티아지트/공지사항.png);
+    background-size: cover;    
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+
+}
+
+.agitbox:nth-child(2) .agittitle {
+    background: url(../img/메인/커뮤니티아지트/입양게시판.png);
+    background-size: cover;    
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+}
+
+.agitbox:last-child .agittitle {
+    background: url(../img/메인/커뮤니티아지트/길냥이쉼터.png);
+    background-size: cover;   
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply; 
+}
+
+.agit-flex-box .agittitle h3{
+    font-weight: 100;
+    text-align: center;
+    font-size: 28px;
+    font-family: '210 GureumGothic 030';
+}
+
+.agit-flex-box .agitentire {
+    background-color: #f4f4f4;
+}
+
+.agitentire .agitbest {
+    height: 145px;
+    padding: 20px;
+}
+
+.agit-flex-box .agitbest:hover {
+    background-color: rgba(255, 217, 157)
+}
+
+.agitentire .agitbest a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.agitentire .agitbest section.bestimg {
+    width: 110px;
+}
+
+.agitentire .agitbest section.bestline {
+    width: 255px;
+    text-align: justify;
+    font-family: '210 GureumGothic 030';
+    color: #7d7d7d;
+}
+
+.agitentire .agitbest section.bestline h4 {
+    font-family: '210 GureumGothic 050';
+    
+}
+
+.agitentire .agitbest section.bestline p.bestcon {
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 18px;
+}
+
+.agitentire .agitbest section.bestline p.bestinfo {
+    text-align: right;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.agitentire .agitcontents {
+    height: 325px;
+    background-color: white;
+
+}
+
+.agitentire .agitcontents{
+    padding: 20px;
+    font-family: '210 GureumGothic 030';
+}
+
+.agitentire .agitcontents p{
+    color: #7d7d7d;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.agitentire .agitcontents p>time{
+    margin-right: 20px;
+}
+
+.agitentire .agitcontents a:last-child{
+    text-align: right;
+    padding-top: 5px;
+}
+
+.agitentire .agitcontents a:hover p{
+    color: #ff9e00;
+}
+
+/*========== footer ========== */
+/*nyanstagram*/
+.nyanstagram {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 520px;
+    background-color: #6d6d6d;
+}
+
+.nyanstagram h3{
+    text-align: center;
+    font-family: '210 GureumGothic 070';
+    font-size: 48px;
+    padding: 40px 0 50px;
+}
+
+.nyanstagram a {
+    color: #e7a335;
+}
+
+.nyanstagram ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nyanstagram ul>li{
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.5s;
+}
+
+.nyanstagram ul>li:hover{
+    transform: scale(110%);
+}
+
+.nyastadirect {
+    display: none;
+    
+}
+
+/*footer-alert*/
+.footer-alert {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
+    background-color: #e7a335;
+    display: flex;
+    justify-content: space-between;
+}
+
+.alert-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.alert-text{
+    width: 1200px;
+}
+
+.alert-text>p{
+    font-size: 20px;
+    letter-spacing: 2px;
+
+}
+
+.alert-text strong.gray {
+    display: inline;
+    font-family: '210 GureumGothic 070';
+    color: #6d6d6d;
+}
+
+.alert-button{
+    width: 260px;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    
+}
+
+.alert-button button {
+    border: 0;
+    color: white;
+    font-family: '210 GureumGothic 050';
+    font-size: 20px;
+
+
+}
+
+.alert-button button:first-child {
+    width: 120px;
+    background-color: #6d6d6d;
+}
+
+.alert-button button:first-child:hover {
+    width: 120px;
+    background-color: #9e9e9e;
+}
+
+.alert-button button:last-child {
+    width: 120px;
+    background-color: #ff4200;
+}
+
+.alert-button button:last-child:hover {
+    width: 120px;
+    background-color: #ff9e00;
+}
+
+/*logo-copyright-address-footdonate*/
+.logo-copyright-address-footdonate {
+    width: 100%;
+    max-width: 1920px;
+    height: 250px;
+    margin: 0 auto;
+    /* background-color: #3f3f3f; */
+}
+
+.footer2-flex {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.footer-logo{
+    width: 260px;
+}
+
+.footer-logo img{
+}
+
+.copyright {
+    width: 350px;
+}
+
+.copyright p {
+    font-family: '210 GureumGothic 030';
+    font-size: 16px;
+}
+
+.copyright strong {
+    font-family: '210 GureumGothic 050';
+    font-size: 24px;
+    color: #e7a335;
+    margin-bottom: 20px;
+}
+
+.address {
+    width: 250px;
+}
+
+.address ul,.address li {
+    list-style-image: url(../img/footer/address.png);
+    line-height: 25px;
+}
+
+.footdonate {
+    width: 450px;
+}
+
+.footdonate h3{
+    font-family: '210 GureumGothic 050';
+    color: #e7a335;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footdonate .label-input-flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 
-/*========== footer ========== */
+.footdonate label {
+    font-family: '210 GureumGothic 030';
+    width: 25%;
+}
+
+.footdonate input{
+    font-family: '210 GureumGothic 030';
+    border: 0;
+    border-bottom: 1px solid white;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+.footdonate input::placeholder{
+    font-family: '210 GureumGothic 030';
+    color: white;
+    opacity: 0.8;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.footdonate button[type="submit"] {
+    width: 125px;
+    height: 35px;
+    border: 1px solid #e7a335;
+    font-size: 20px;
+    transition: background-color 0.5s;
+}
+
+.footdonate button[type="submit"]:hover {
+    border: 1px solid #e7a335;
+    background-color: #e7a335;
+    color: white;
+    font-weight: 600;
+}
+
+
+/*24, 35, 25, 45*/
