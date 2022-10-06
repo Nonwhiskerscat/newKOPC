@@ -1000,6 +1000,7 @@ p.semidescription {
 }
 
 .footdonate {
+    position: relative;
     padding-top: 30px;
     width: 450px;
 }
@@ -1039,6 +1040,8 @@ p.semidescription {
 }
 
 .footdonate button[type="submit"] {
+    position: absolute;
+    right: 0;
     width: 125px;
     height: 35px;
     border: 1px solid #e7a335;
