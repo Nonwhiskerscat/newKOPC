@@ -217,7 +217,9 @@ header>img{
 }
 
 .intro{
+    animation: intro 3s;
     margin-top: 40px;
+    
 }
 
 .intro h2{
@@ -481,6 +483,7 @@ p.semidescription {
 
 /*photozone*/
 .photozone {
+    position: relative;
     padding-top: 600px;
     background: url(../img/메인/프레임/뉴스존\ 제목.png) no-repeat;
     background-position-x: center;
@@ -488,7 +491,6 @@ p.semidescription {
 }
 
 .photobox {
-    position: relative;
     text-align: center;
     margin-top: 70px;
     width: 100%;
@@ -516,7 +518,14 @@ p.semidescription {
 }
 
 .photobutton{
-    display: none;
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    transform: translateY(-160px);
 }
 
 .photozone .pagemap{
@@ -661,9 +670,6 @@ p.semidescription {
     display: none;
 }
 
-.newszone .newsbutton{
-    display: none;
-}
 
 .newszone .pagemap{
     position: absolute;
@@ -674,6 +680,17 @@ p.semidescription {
     display: flex;
     width: 18.40579710144928%;
     justify-content: space-between;
+}
+
+.newsbutton{
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    transform: translateY(-350px);
 }
 
 /*community*/
@@ -813,6 +830,7 @@ p.semidescription {
 /*========== footer ========== */
 /*nyanstagram*/
 .nyanstagram {
+    position: relative;
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
@@ -840,15 +858,33 @@ p.semidescription {
     display: flex;
     justify-content: space-between;
     transition: transform 0.5s;
+    position: relative;
 }
 
 .nyanstagram ul>li:hover{
     transform: scale(110%);
 }
 
-.nyastadirect {
-    display: none;
-    
+.nyanstagram .pagemap{
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    display: flex;
+    width: 18.40579710144928%;
+    justify-content: space-between;
+}
+
+.nyastabutton {
+    display: flex;
+    width: 1860px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    transform: translateY(-190px);
 }
 
 /*footer-alert*/
