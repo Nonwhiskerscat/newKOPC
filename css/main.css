@@ -332,6 +332,7 @@ img.mainstart{
     width: 100%;
     height: 1200px;
     display: flex;
+    position: fixed;
     background: url(../img/메인/후원입양/후원고양이\(다크\).png) no-repeat;
     background-position: center;
 }

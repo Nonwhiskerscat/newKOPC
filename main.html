@@ -8,9 +8,10 @@
     <meta name="Author" content="Seoyong Kim">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/BlockMouse.js"></script>
     <title>KOPC::한국 고양이 보호 협회</title>
 </head>
-<body>
+<body onselectstart='blockSelect()' oncontextmenu='return blockRightClick()'>
     <div class="wrapper">
         <header id="target">
             <img src="./img/메인/메인시작(다크).png" alt="메인시작_다크">
