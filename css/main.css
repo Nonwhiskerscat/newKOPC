@@ -218,20 +218,12 @@ header>img{
 }
 
 /* intro */
-@keyframes intro{
-    from{
-        opacity: 0;
-    }
-    
-    to{
-        opacity: 1;
-    }
-}
+
 
 .intro{
     animation: intro 3s;
     margin-top: 40px;
-    
+    position: relative;
 }
 
 .intro h2{
@@ -271,14 +263,22 @@ header>img{
     
 }
 
+.intro p.membertitle {
+    position: absolute;
+    right: 270px;
+    bottom: 0px;
+    font-size: 24px;
+}
+
 .intro p.members{
     margin-top: 20px;
-    font-size: 24px;
-    text-indent: 160px;
+    padding-left: 90px;
+    font-size: 20px;
     text-align: right;
 }
 
 .intro .dial {
+    display: inline-block;
     font-size: 60px;
     color: #e7a335;
     font-weight: 600;
