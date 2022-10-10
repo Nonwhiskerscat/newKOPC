@@ -486,11 +486,13 @@ p.semidescription {
 /*nyanzone*/
 .nyanzone{
     margin-top: 150px;
-    background: url(../img/기타/메인2부분\(다크\).png) no-repeat;
+    background: url(../img/기타/메인2부분\(다크\).png) no-repeat 80%;
     background-size: cover;
     background-position-x: center;
     width: 100%;
+    margin: 0 auto;
     height: 3200px;
+    max-width: 1920px;
 }
 
 /*photozone*/
@@ -849,6 +851,11 @@ p.semidescription {
 .agitentire .agitbest {
     height: 145px;
     padding: 20px;
+    transition: all 0.5s;
+}
+
+.agit-flex-box .agitbest {
+    transition: all 0.5s;
 }
 
 .agit-flex-box .agitbest:hover {
@@ -914,6 +921,10 @@ p.semidescription {
     padding-top: 5px;
 }
 
+.agitentire .agitcontents a p {
+    transition: all 0.5s;
+}
+
 .agitentire .agitcontents a:hover p{
     color: #ff9e00;
 }
@@ -943,7 +954,7 @@ p.semidescription {
 .nyanstagram ul{
     display: flex;
     justify-content: space-between;
-    width: 93%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -1031,8 +1042,6 @@ p.semidescription {
     color: white;
     font-family: '210 GureumGothic 050';
     font-size: 20px;
-
-
 }
 
 .alert-button button:first-child {
@@ -1041,7 +1050,6 @@ p.semidescription {
 }
 
 .alert-button button:first-child:hover {
-    width: 120px;
     background-color: #9e9e9e;
 }
 
@@ -1051,7 +1059,6 @@ p.semidescription {
 }
 
 .alert-button button:last-child:hover {
-    width: 120px;
     background-color: #ff9e00;
 }
 
