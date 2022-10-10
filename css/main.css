@@ -332,7 +332,6 @@ img.mainstart{
     width: 100%;
     height: 1200px;
     display: flex;
-    position: fixed;
     background: url(../img/메인/후원입양/후원고양이\(다크\).png) no-repeat;
     background-position: center;
 }
@@ -488,10 +487,10 @@ p.semidescription {
 .nyanzone{
     margin-top: 150px;
     background: url(../img/기타/메인2부분\(다크\).png) no-repeat;
-    max-width: 100%;
+    background-size: cover;
     background-position-x: center;
+    width: 100%;
     height: 3200px;
-    
 }
 
 /*photozone*/
@@ -785,10 +784,12 @@ p.semidescription {
 
 /*community*/
 .cagit {
+    margin-top: 200px;
     width: 100%;
     height: 1200px;
     background: url(../img/메인/커뮤니티/커뮤니티\ 배경.png) no-repeat;
     background-position: center;
+    background-position-y: 0;
 }
 
 .agit-flex-box {
@@ -924,7 +925,7 @@ p.semidescription {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    height: 520px;
+    height: 480px;
     background-color: #6d6d6d;
 }
 
@@ -935,26 +936,30 @@ p.semidescription {
     padding: 40px 0 50px;
 }
 
-.nyanstagram a {
+.nyanstagram h3>a{
     color: #e7a335;
 }
 
 .nyanstagram ul{
     display: flex;
     justify-content: space-between;
+    width: 93%;
+    margin: 0 auto;
 }
 
 .nyanstagram ul>li{
-    display: flex;
-    justify-content: space-between;
     transition: transform 0.5s;
-    position: relative;
-    z-index:2
+    z-index:2;
+}
+
+.nyanstagram ul>li a {
+    width: 250px;
 }
 
 
 .nyanstagram ul>li:hover{
     transform: scale(110%);
+    z-index:3;
 }
 
 .nyanstagram .pagemap{
@@ -970,7 +975,7 @@ p.semidescription {
 
 .nyastabutton {
     display: flex;
-    width: 1860px;
+    width: 1380px;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -1001,7 +1006,6 @@ p.semidescription {
 }
 
 .alert-text>p{
-    font-size: 20px;
     letter-spacing: 2px;
 
 }
@@ -1093,7 +1097,7 @@ p.semidescription {
     width: 250px;
 }
 
-.address ul,.address li {
+.address ul, .address li {
     list-style-image: url(../img/footer/address.png);
     line-height: 25px;
 }
@@ -1101,7 +1105,7 @@ p.semidescription {
 .footdonate {
     position: relative;
     padding-top: 30px;
-    width: 450px;
+    width: 400px;
 }
 
 .footdonate h3{
