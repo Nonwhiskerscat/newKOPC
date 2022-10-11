@@ -11,10 +11,11 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="./javascript/BlockMouse.js"></script>
     <script src="./javascript/RollingNumber.js"></script>
+    <script src="./javascript/ScrollSmooth.js"></script>
     <title>KOPC::한국 고양이 보호 협회</title>
 </head>
 <body onselectstart='blockSelect()' oncontextmenu='return blockRightClick()'>
-    <div class="wrapper">
+    <div id="wrapper">
         <header id="target">
             <img src="./img/메인/메인시작(다크).png" alt="메인시작_다크">
             <div class="container">
@@ -90,18 +91,179 @@
     
                 <div class="mainmenu">
                     <div class="menu-flex-box">
-                        <nav class="menulist">
-                            <ul>
-                                <li><a href="https://www.catcare.or.kr/introasso">단체소개</a></li>
-                                <li><a href="https://www.catcare.or.kr/townnot">공지사항</a></li>
-                                <li><a href="https://www.catcare.or.kr/dona">회비/후원</a></li>
-                                <li><a href="https://www.catcare.or.kr/resofaq">길냥이사랑</a></li>
-                                <li><a href="https://www.catcare.or.kr/townboard">길냥이마을</a></li>
-                                <li><a href="https://www.catcare.or.kr/resoboard">자료실</a></li>
-                                <li><a href="https://www.catcare.or.kr/networkgroup">Cat Network</a></li>
-                                <li><a href="https://www.catcare.or.kr/FAQ">Q&A 게시판</a></li>
+                        <nav class="gnb">
+                            <ul class="dept01">
+                                <li class="rootgnb"><a href="https://www.catcare.or.kr/introasso">단체소개</a>
+                                    <ul class="dept02">
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/introasso">협회소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/history">연혁</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/intromanager">구성</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/board_lKmL74">주요활동</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="rootgnb"><a href="https://www.catcare.or.kr/townnot">공지사항</a>
+                                    <ul class="dept02">
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/townnot">공지사항</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/KOPCNewsletter">소식지</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/crdNEWs">카드뉴스</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/misreport">바로잡습니다.</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="rootgnb"><a href="https://www.catcare.or.kr/dona">회비/후원</a>
+                                    <ul class="dept02">
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/townnot">CMS 자동이체</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/donaup">회원등업</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/donaaccs">후원결산</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/shelter">쉼터/입양센터</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/share">기부후원</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/goods">후원살림방</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/donaq">후원문의</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="rootgnb"><a href="https://www.catcare.or.kr/resofaq">길냥이사랑</a>
+                                    <ul class="dept02">
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/FAQ">자주묻는 질문</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/resofaq">묻고답하기</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/actitnr">TNR 신청</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/rgnlTNR">지방 TNR 신청</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/afterTNR">TNR 후기</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/actiasist">치료지원신청</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/calculate">치료지원정산게시판</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/rescue">협회구조/지원길냥이</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/actitrap">통덫 대여신청</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/crcage">철제케어지 대여신청</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/actipherm">약품신청</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/actiinform">홍보지신청</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/acti09">사료공동구매</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="rootgnb"><a href="https://www.catcare.or.kr/townboard">길냥이마을</a>
+                                    <ul class="dept02">
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/townhi">오늘의 인사</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/townboard">길냥이쉼터</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/townphoto">길냥이사진관</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/townadop">입양임보</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/dmeboard">후원회원게시판</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/townmall">고보협장터</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/webtoon">칼럼/고보협뉴스</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="rootgnb"><a href="https://www.catcare.or.kr/resoboard">자료실</a>
+                                    <ul class="dept02">
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/index.php?mid=resoboard&category=139">동물관련법령</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/index.php?mid=resoboard&category=141">길고양이알기</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/index.php?mid=resoboard&category=143">길고양이TNR</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/index.php?mid=resoboard&category=531594">문서자료</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/index.php?mid=resoboard&category=531596">언론기사</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/index.php?mid=resoboard&category=531598">유용한TIP</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/index.php?mid=resoboard&category=22846">동물학대</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/resobook">동물관련서적</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/index.php?mid=resoboard&category=219">기타</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="rootgnb"><a href="https://www.catcare.or.kr/networkgroup">Cat Network</a>
+                                    <ul class="dept02">
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/networkgroup">풀뿌리소모임</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/networkillegal">불법행위고발</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.catcare.or.kr/networkah">동물병원추천</a>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </nav><!--menulist-->
+                        </nav><!--gnb-->
                     </div><!--menu-flex-box-->
                 </div><!--mainmenu-->
             </div><!--container-->
