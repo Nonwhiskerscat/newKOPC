@@ -22,7 +22,7 @@
     /* overflow: hidden; */
 }
 
-.fadeL, .fadeR, .fadeT, .fadeB, .fade{
+.fadeL, .fadeR, .fadeT, .fadeB{
     position: relative;
 }
 
@@ -263,13 +263,29 @@ header>img{
 
 
 /* intro */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 30%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
 
+.fade {
+    position: relative;
+    animation: fadeInUp 3s;
+}
 
 .intro{
     animation: intro 3s;
     margin-top: 40px;
     position: relative;
 }
+
+
 
 .intro h2{
     font-size: 28px;
@@ -472,6 +488,9 @@ p.semidescription {
 }
 
 /*challenges*/ 
+
+
+
 .challenges{
     margin-top: 0;
     height: 1000px;
