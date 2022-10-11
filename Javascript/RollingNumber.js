@@ -1,4 +1,4 @@
-window.onload=function(){
+window.addEventListener('load',function(){
     var memberCountConTxt= 144683;
 
     $({ val : 0 }).animate({ val : memberCountConTxt }, {
@@ -18,3 +18,4 @@ window.onload=function(){
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
 }
+);

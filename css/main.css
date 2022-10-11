@@ -199,10 +199,12 @@ header>img{
 
 .menu-flex-box nav ul>li{
     font-size: 18px;
-    border-right: 1px solid white;
+    /* border-right: 1px solid white; */
     padding-right: 45px;
     text-align: center;
+    width: 12.5%;
 }
+
 
 .menu-flex-box nav ul>li:last-child{
     border-right: none;
@@ -486,7 +488,7 @@ p.semidescription {
 /*nyanzone*/
 .nyanzone{
     margin-top: 150px;
-    background: url(../img/기타/메인2부분\(다크\).png) no-repeat 80%;
+    background: url(../img/기타/메인2부분\(다크\).png) no-repeat;
     background-size: cover;
     background-position-x: center;
     width: 100%;
@@ -1084,29 +1086,30 @@ p.semidescription {
 
 .copyright {
     padding-top: 40px;
-    width: 350px;
+    width: 330px;
 }
 
 .copyright p {
     font-family: '210 GureumGothic 030';
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .copyright strong {
     font-family: '210 GureumGothic 050';
-    font-size: 24px;
+    font-size: 21px;
     color: #e7a335;
     margin-bottom: 20px;
 }
 
 .address {
     padding-top: 62.5px;
-    width: 250px;
+    width: 240px;
 }
 
 .address ul, .address li {
     list-style-image: url(../img/footer/address.png);
     line-height: 25px;
+    font-size: 14px;
 }
 
 .footdonate {
@@ -1118,7 +1121,7 @@ p.semidescription {
 .footdonate h3{
     font-family: '210 GureumGothic 050';
     color: #e7a335;
-    font-size: 24px;
+    font-size: 21px;
     margin-bottom: 20px;
 }
 
@@ -1145,7 +1148,7 @@ p.semidescription {
     font-family: '210 GureumGothic 030';
     color: white;
     opacity: 0.8;
-    font-size: 14px;
+    font-size: 12px;
     padding-left: 5px;
 }
 
