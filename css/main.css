@@ -302,7 +302,7 @@ header>img{
     font-size: 40px;
     font-family: '210 GureumGothic 070';
     color: #e7a335;
-    text-indent: 160px;
+    text-indent: 250px;
     
 }
 
@@ -526,12 +526,30 @@ p.semidescription {
     font-weight: 300;
 }
 
+p.typing-txt{
+    display: none;
+}
+
+.typing {  
+    display: inline-block; 
+    animation-name: cursor; 
+    animation-duration: 0.3s; 
+    animation-iteration-count: infinite; 
+} 
+
+@keyframes cursor{ 
+0%{border-right: 1px solid #fff} 
+50%{border-right: 1px solid #000} 
+100%{border-right: 1px solid #fff} 
+}
+
 /*nyanzone*/
 .nyanzone{
     margin-top: 150px;
     background: url(../img/기타/메인2부분\(다크\).png) no-repeat;
-    background-size: cover;
-    background-position-x: center;
+    /* background-size: 100%; */
+    background-position: center;
+
     width: 100%;
     margin: 0 auto;
     height: 3200px;
@@ -541,10 +559,10 @@ p.semidescription {
 /*photozone*/
 .photozone {
     position: relative;
-    padding-top: 600px;
+    padding-top: 700px;
     background: url(../img/메인/프레임/뉴스존\ 제목.png) no-repeat;
     background-position-x: center;
-    background-position-y: 580px;
+    background-position-y: 680px;
 }
 
 .photobox {
@@ -1121,7 +1139,7 @@ p.semidescription {
 }
 
 .footer-logo{
-    padding-top: 62.5px;
+    padding-top: 55px;
     width: 260px;
 }
 
@@ -1143,7 +1161,7 @@ p.semidescription {
 }
 
 .address {
-    padding-top: 62.5px;
+    padding-top: 55px;
     width: 240px;
 }
 
