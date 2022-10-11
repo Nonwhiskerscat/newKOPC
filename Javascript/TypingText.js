@@ -8,7 +8,7 @@ window.addEventListener('load',function(){
     
     if(typingBool==false){ 
         typingBool=true;     
-        var tyInt = setInterval(typing,30); 
+        var tyInt = setInterval(typing,100); 
     } 
 
     function typing(){ 

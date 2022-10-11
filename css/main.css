@@ -16,13 +16,14 @@
     position: relative;
 }
 
-
 #wrapper {
     width: 100%;
     /* overflow: hidden; */
 }
 
-.fadeL, .fadeR, .fadeT, .fadeB{
+/*========== javascript ========== */
+
+.fadeL, .fadeR, .fadeT, .fadeB, .fadeE{
     position: relative;
 }
 
@@ -194,12 +195,12 @@ header>img{
     padding: 25px 0;
 }
 
-.menu-flex-box nav ul{
+.menu-flex-box .gnb ul{
     display: flex;
     justify-content: space-between;
 }
 
-.menu-flex-box nav ul>li{
+.menu-flex-box .gnb ul>li{
     font-size: 18px;
     /* border-right: 1px solid white; */
     /* padding-right: 45px; */
@@ -207,12 +208,12 @@ header>img{
     width: 12.5%;
 }
 
-.menu-flex-box nav ul>li:last-child{
+.menu-flex-box .gnb ul>li:last-child{
     border-right: none;
     padding-right: 0px;
 }
 
-.menu-flex-box nav ul>li::after{
+.menu-flex-box .gnb ul>li::after{
     content: '';
     display: block;
     border-top: 2px solid #e7a335;
@@ -221,43 +222,52 @@ header>img{
     transition: transform 0.5s;
 }
 
-.menu-flex-box nav ul>li:hover::after{
+.menu-flex-box .gnb ul>li:hover::after{
     transform: scaleX(80%);
 }
 
-.menu-flex-box nav ul>li>a{
+.menu-flex-box .gnb ul>li>a{
     transition: 0.5s;
 }
 
-.menu-flex-box nav ul>li>a:hover{
+.menu-flex-box .gnb ul>li>a:hover{
     color: #e7a335;
 }
 
-.menu-flex-box nav ul.dept02 {
+.menu-flex-box .gnb ul.dept02 {
     display: none;
 }
 
-.menu-flex-box:hover nav ul.dept02 {
+.menu-flex-box:hover .gnb ul.dept02 {
     display: block;
 }
 
-.menu-flex-box:hover nav ul>li.rootgnb>a{
+.menu-flex-box:hover .gnb ul>li.rootgnb>a{
+    color: #ff9e00;
+}
+
+.menu-flex-box .gnb ul>li.rootgnb:hover>a{
     color: #ff4200;
 }
 
-.menu-flex-box nav ul.dept02 li {
-    width: 100%;
+.menu-flex-box:hover .gnb>ul{
+    background-color: rgba(0,0,0,0.6);
 }
 
-.menu-flex-box nav ul.dept02 li:first-child {
+.menu-flex-box .gnb ul.dept02 li {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.menu-flex-box .gnb ul.dept02 li:first-child {
     margin-top: 20px;
 }
 
-.menu-flex-box nav ul.dept02 li a {
+.menu-flex-box .gnb ul.dept02 li a {
     font: 16px '210 GureumGothic 030'
 }
 
-.menu-flex-box nav ul.dept02>li:hover::after{
+.menu-flex-box .gnb ul.dept02>li:hover::after{
     transform: scaleX(0);
 }
 
@@ -492,7 +502,7 @@ p.semidescription {
 
 
 .challenges{
-    margin-top: 0;
+    margin-top: 150px;
     height: 1000px;
 }
 
@@ -867,7 +877,7 @@ p.typing-txt{
 
 /*community*/
 .cagit {
-    margin-top: 200px;
+    margin-top: 100px;
     width: 100%;
     height: 1200px;
     background: url(../img/메인/커뮤니티/커뮤니티\ 배경.png) no-repeat;
@@ -1227,7 +1237,7 @@ p.typing-txt{
     font-family: '210 GureumGothic 030';
     color: white;
     opacity: 0.8;
-    font-size: 12px;
+    font-size: 14px;
     padding-left: 5px;
 }
 
