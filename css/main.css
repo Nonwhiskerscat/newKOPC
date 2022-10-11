@@ -22,7 +22,9 @@
     /* overflow: hidden; */
 }
 
-
+.fadeL, .fadeR, .fadeT, .fadeB, .fade{
+    position: relative;
+}
 
 /*========== header ========== */
 header {
@@ -388,7 +390,7 @@ img.mainstart{
 
 .donate h2 .wait{
     font-size: 120px;
-    color: orange;
+    color: #e7a335;
 }
 
 .donate h3{
@@ -470,7 +472,6 @@ p.semidescription {
 }
 
 /*challenges*/ 
-
 .challenges{
     margin-top: 0;
     height: 1000px;

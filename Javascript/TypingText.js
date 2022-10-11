@@ -7,17 +7,17 @@ window.addEventListener('load',function(){
     typingTxt=typingTxt.split(""); 
     
     if(typingBool==false){ 
-       typingBool=true;     
-       var tyInt = setInterval(typing,30); 
+        typingBool=true;     
+        var tyInt = setInterval(typing,30); 
     } 
-         
+
     function typing(){ 
-      if(typingIdx<typingTxt.length){ 
+        if(typingIdx<typingTxt.length){ 
         $(".typing").append(typingTxt[typingIdx]);
         typingIdx++; 
-       } else{ 
+        } else{ 
         clearInterval(tyInt); 
-       } 
+        } 
     }  
 }
 );
