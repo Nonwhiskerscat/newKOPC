@@ -1,23 +1,8 @@
 window.onload=function(){
 
     document.oncontextmenu = function (e) {
-        function deleteBoard(seq){
-            Swal.fire({
-            title: '글을 삭제하시겠습니까???',
-            text: "삭제하시면 다시 복구시킬 수 없습니다.",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: '삭제',
-            cancelButtonText: '취소'
-            }).then((result) => {
-            if (result.value) {
-                냐옹
-            }
-            })
-        }
-        
+        alert(`이미지 훔쳐 가지 말고
+우리 길고양이들 후원 좀 해달라냥! ฅ(=ↀᴥↀ=)ฅ`);
         return false;
     }
 
