@@ -13,12 +13,5 @@ window.onload=function(){
         return false;
     }
 
-
-    document.addEventListener('keypress', ()=>{
-        const key1=this.keyCode;
-        if(key1 == 123) {
-            alert(`텍스트 퍼가려다 나한테 제대로 걸렸냥?
-한 번만 더 걸리면 가만 안 둔다냥! ฅ(=ↀДↀ=)ฅ`);
-        }
-    });
 }
+

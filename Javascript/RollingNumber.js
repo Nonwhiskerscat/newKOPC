@@ -1,5 +1,5 @@
 window.addEventListener('load',function(){
-    var memberCountConTxt= 144683;
+    var memberCountConTxt= 144783;
 
     $({ val : 0 }).animate({ val : memberCountConTxt }, {
     duration: 4000,
