@@ -1,8 +1,8 @@
 window.onload=function(){
 
     document.oncontextmenu = function (e) {
-        alert(`이미지 훔쳐 가려고 마우스 오른쪽 버튼 누르다 나한테 걸렸냥? 
-그러지 말고 우리 불쌍한 길고양이들 후원 좀 해달라냥! ฅ(=ↀᴥↀ=)ฅ`);
+        alert(`이미지 훔쳐 가지 말고
+우리 길고양이들 후원 좀 해달라냥! ฅ(=ↀᴥↀ=)ฅ`);
         return false;
     }
 
