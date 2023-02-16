@@ -33,7 +33,7 @@
 ### 개요
 
 > <h3>목표&nbsp&nbsp:clipboard:</h3>
-> <p>디자인 혹은 인터페이스적으로 개선이 필요해 보이는 기존 페어몬트 앰배서더 호텔 사이트 (<a href="https://fairmont-seoul.com/">링크</a>)를 새로운 페이지로 리뉴얼하기!!</p>
+> <p>(<a href="https://www.catcare.or.kr/">링크</a>)</p>
 <br>
 
 > <h3>뒷 이야기&nbsp&nbsp:crystal_ball:</h3>
@@ -148,7 +148,7 @@
 
 
 ## 코딩
-### 풀페이지 플러그인
+### 숫자 카운팅 효과
 ``` JavaScript
 
 ```
@@ -158,11 +158,28 @@
  
 <hr>
 
-## 최종 
+### 뷰포트에 따른 css 애니메이션
+``` JavaScript
+
+```
+<div align="center"><b>코드블럭 2.2</b> </div><br>
+
+``` JavaScript
+
+```
+<div align="center"><b>코드블럭 2.2</b> </div><br>
+ 
+<p align="justify"></p>
+ 
+<br>
+
+## 최종시안
 
 ## 최종 결과물
+
 ### 로고
-### 페이지 비교
+
+### 헤더 및 인트로
 <div align="center">
   <table width="100%">
     <tr>
@@ -182,12 +199,6 @@
     </tr>
   </table>
 </div>
-
-<p align="justify"></p>
-
-<hr>
-
-### 헤더 및 인트로
 
 <p align="justify"></p>
 
@@ -218,12 +229,17 @@
 <hr>
 
 ## 프로젝트 후기
-### 소감
 
-### 개선된 점
+> <h3>소감&nbsp&nbsp:clipboard:</h3>
+> <p align="justify"></p>
+<br>
 
-### 반성할 점
+> <h3>개선된 점&nbsp&nbsp:crystal_ball:</h3>
+> <p align="justify"></p>
+<br>
 
+> <h3>반성할 점&nbsp&nbsp:moneybag:</h3>
+> <p>인건비 + 점심값 + 전기세 + 학원까지 왔다갔다 하는 교통비 + 인터넷 이용료를 제외한 개인적인 비용은 들지 않았습니다. </p>
 
 ## 마무리 인사
   
