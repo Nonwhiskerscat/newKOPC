@@ -18,6 +18,7 @@
   - [톤앤 매너](#톤앤-매너)
   - [폰트 패밀리](#폰트-패밀리)
 - [코딩](#코딩)
+  - [웹키트를 활용한 스크롤바 스타일링](#웹키트를-활용한-스크롤바-)
   - [숫자 카운팅 효과](#숫자-카운팅-효과)
   - [뷰포트에 따른 css 애니메이션](#뷰포트에-따른-css-애니메이션)
 - [최종 시안](#최종-)
@@ -131,6 +132,33 @@
 
 
 ## 코딩
+### 웹키트를 활용한 스크롤바 스타일링
+``` CSS
+html {
+    overflow: overlay;
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #e7a335;
+    opacity: 0.5;
+    border-radius: 8px;
+}
+
+html::-webkit-scrollbar-track {
+    border-radius: 8px;
+}
+```
+<div align="center"><b>코드블럭 1</b> 기존 스크롤바를 커스터마이징 할 수 있는 css 코드</div><br>
+ 
+<p align="justify">
+우선 기존 scroll 바의 default인 뒷배경과 상단 혹은 하단 끝에 있는 화살표를 날리기 위해, html의 overflow 속성의 값을 overlay로 주었습니다. 그리고 스크롤바의 반경은 <b>&::-webkit-scrollbar</b>에서 설정하였고, thumb를 통해 스크롤 바의 색상을 고양이 보호협회 페이지의 아이덴티티 컬러인 #e7a335로 설정하였습니다. 게다가 저는 이 프로젝트 외에 대부분의 포트폴리오 페이지의 스크롤바를 다음과 같이 스타일링하였습니다.
+</p>
+<hr>
+
 ### 숫자 카운팅 효과
 ``` JavaScript
 
