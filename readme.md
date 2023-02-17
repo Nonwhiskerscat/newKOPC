@@ -32,16 +32,18 @@
 
 ### 개요
 
-> <h3>목표&nbsp&nbsp:clipboard:</h3>
-> <p>기존 한국 고양이 보호협회 사이트(<a href="https://www.catcare.or.kr/">링크</a>)의 메인페이지를 새롭게 디자인하고, 현대의 트렌드에 맞는 로고 디자인 리뉴얼하기!!</p>
+
+> <h3>주제&nbsp&nbsp:bookmark:</h3>
+> <p align="justify">홈페이지 리뉴얼</p>
 <br>
 
-> <h3>뒷 이야기&nbsp&nbsp:crystal_ball:</h3>
-> <p align="justify"></p>
+> <h3>목표&nbsp&nbsp:clipboard:</h3>
+> <p align="justify">기존 한국 고양이 보호협회 사이트(<a href="https://www.catcare.or.kr/">링크</a>)의 메인페이지를 새롭게 디자인하고, 현대의 트렌드에 맞는 로고 디자인 리뉴얼하기!!</p>
+> 
 <br>
 
 > <h3>제작 비용&nbsp&nbsp:moneybag:</h3>
-> <p>인건비 + 점심값 + 전기세 + 학원까지 왔다갔다 하는 교통비 + 인터넷 이용료를 제외한 개인적인 비용은 들지 않았습니다. </p>
+> <p align="justify">인건비 + 점심값 + 전기세 + 학원까지 왔다갔다 하는 교통비 + 인터넷 이용료를 제외한 개인적인 비용은 들지 않았습니다. 굳이 말하자면 월 62,000원씩이나 나가는 어도비 구독료?? <s>넘나 비싼것...  </s> :crying_cat_face::crying_cat_face: </p>
 
 <br><br>
 
@@ -240,6 +242,10 @@
 
 > <h3>반성할 점&nbsp&nbsp:moneybag:</h3>
 > <p align="justify"> </p>
+
+> <h3>뒷 이야기&nbsp&nbsp:crystal_ball:</h3>
+> <p align="justify">경이롭게도 프로젝트 이전에 <b>수염 없냥은 이 페이지를 알고 있었다</b>.:scream_cat: 게다가 <b>회원으로 가입하여 후원까지 하고 있었다</b>. :scream_cat::scream_cat: 더 놀라운 것은... 아... 뭐였더라?... 아무튼 매번 방문하는 사이트니까, 리뉴얼이 쉽기는 개뿔... 디자인 짜 내느라 죽는 줄 알았다.</p>
+<br>
 
 ## 마무리 인사
   
