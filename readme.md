@@ -1,11 +1,14 @@
 # 한국 고양이 보호협회
 
 <div align="center">
+  <a href="http://kidcatnyantopia.net/works/pages/newKopc/index.html">
   <img src="https://user-images.githubusercontent.com/114633489/218716619-8929cae6-5e93-434b-b946-09af5902d150.png">
+  </a>
 </div>
 
 <div align="justify">
-<a href="https://github.com/Nonwhiskerscat">수염 없냥</a>의 첫 번째 프로젝트, 고양이 보호협회 페이지 리뉴얼 대작전!, <s>어...? 그러면 좀 이상한가?</s> 안녕하십니까, 이번 프로젝트를 맡게 된 <b>수염 없냥</b>입니다. 처음 이 프로젝트를 맡게 되었을 때, HTML, CSS가 익숙하지 않았고, 제이쿼리에서 '제'자도 모르는 초보 개발자였습니다. 물론 웹 페이지를 완성하긴 했지만, 약간 아쉬움이 드는 프로젝트라고도 생각합니다. 지금부터 고양이 보호협회 페이지 리뉴얼 홈페이지에 대해 설명하겠습니다. <s>어이 거기 페이지 접속한 닝겐아, 뒤로가기 누르지 말고 스크롤바를 내리라냥!</s>
+<br>
+  <p align="justify"><a href="https://github.com/Nonwhiskerscat">수염 없냥</a>의 첫 번째 프로젝트, 고양이 보호협회 페이지 리뉴얼 대작전!, <s>어...? 그러면 좀 이상한가?</s> 안녕하십니까, 해당 프로젝트를 맡은 <b>수염 없냥</b>입니다. 처음 이 프로젝트를 맡게 되었을 때, HTML, CSS가 익숙하지 않았고, 제이쿼리에서 '제'자도 모르는 초보 개발자였습니다. 물론 웹 페이지를 완성하긴 했지만, 약간 아쉬움이 드는 프로젝트라고도 생각합니다. 지금부터 고양이 보호협회 페이지 리뉴얼 홈페이지에 대해 설명하겠습니다. <s>어이 거기 페이지 접속한 닝겐아, 뒤로가기 누르지 말고 스크롤바를 내리라냥!</s></p>
 </div>
 
 ## Contents
@@ -65,19 +68,19 @@
 </div><br>
 
 > <h3>기획 과정(09.15 ~ 09.17)&nbsp&nbsp:egg:</h3>
-> <p></p>
+> <p>리뉴얼 홈페이지 선정(고민 1도 안 했음 :smile_cat::smile_cat:), 와이어프레임 제작</p>
 <br>
 
-> <h3>디자인 과정(09.17 ~ 10.26)&nbsp&nbsp:hatching_chick:</h3>
-> <p></p>
+> <h3>디자인 과정(09.17 ~ 09.21)&nbsp&nbsp:hatching_chick:</h3>
+> <p>다크 모드 시안 디자인  :last_quarter_moon:, 라이트 모드 시안 디자인 :sunny:, 로고 제작</p>
 <br>
 
-> <h3>코딩 과정(10.27 ~ 11.02)&nbsp&nbsp:hatched_chick:</h3>
-> <p></p>
+> <h3>코딩 과정(09.22 ~ 10.02)&nbsp&nbsp:hatched_chick:</h3>
+> <p>HTML 코딩, CSS 코딩, Jquery 코딩</p>
 <br>
 
-> <h3>검토 및 마무리 과정(11.03 ~ 11.13)&nbsp&nbsp:rooster:</h3>
-> <p></p>
+> <h3>검토 및 마무리 과정(10.03 ~ 10.05)&nbsp&nbsp:rooster:</h3>
+> <p>크로스 브라우징, 피드백 및 테스트, 호스팅 </p>
 <br>
 
 ## 프로젝트 계기
