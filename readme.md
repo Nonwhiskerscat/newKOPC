@@ -152,7 +152,7 @@ html::-webkit-scrollbar-track {
     border-radius: 8px;
 }
 ```
-<div align="center"><b>코드블럭 1</b> 기존 스크롤바를 커스터마이징 할 수 있는 css 코드</div><br>
+<div align="center"><b>코드블럭 1</b> main.css 중 기존 스크롤바를 커스터마이징 할 수 있는 css 코드</div><br>
  
 <p align="justify">
 우선 기존 scroll 바의 default인 뒷배경과 상단 혹은 하단 끝에 있는 화살표를 날리기 위해, html의 overflow 속성의 값을 overlay로 주었습니다. 그리고 스크롤바의 반경은 <b>&::-webkit-scrollbar</b>에서 설정하였고, thumb를 통해 스크롤 바의 색상을 고양이 보호협회 페이지의 아이덴티티 컬러인 #e7a335로 설정하였습니다. 게다가 저는 이 프로젝트 외에 대부분의 포트폴리오 페이지의 스크롤바를 다음과 같이 스타일링하였습니다.
@@ -161,11 +161,30 @@ html::-webkit-scrollbar-track {
 
 ### 숫자 카운팅 효과
 ``` JavaScript
+window.addEventListener('load',function(){
+    var memberCountConTxt= 144783;
 
+    $({ val : 0 }).animate({ val : memberCountConTxt }, {
+    duration: 4000,
+    step: function() {
+    var num = numberWithCommas(Math.floor(this.val));
+        $(".dial").text(num);
+    },
+    
+    complete: function() {
+        var num = numberWithCommas(Math.floor(this.val));
+        $(".dial").text(num);
+    }
+    });
+
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+});
 ```
-<div align="center"><b>코드블럭 1</b> </div><br>
- 
-<p align="justify"></p>
+<div align="center"><b>코드블럭 2</b> RollingNumber.js 중 멤버 수를 카운팅 할 수 있는 js코드</div><br>
+
+<p align="justify">숫자가 0부터 고보협 회원 수인 약 15만까지 카운팅 효과를 주기 위해 jquery의 animate 중 step과 complete를 사용하였습니다. 그리고 <b>toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");</b>를 적용하여 고보협 회원 수를 천 단위마다 콤마(,)로 끊어 사용자가 보다 숫자를 읽기 쉽게 하도록 구현하였습니다.</p>
  
 <hr>
 
@@ -173,12 +192,12 @@ html::-webkit-scrollbar-track {
 ``` JavaScript
 
 ```
-<div align="center"><b>코드블럭 2.2</b> </div><br>
+<div align="center"><b>코드블럭 3.1</b> </div><br>
 
 ``` JavaScript
 
 ```
-<div align="center"><b>코드블럭 2.2</b> </div><br>
+<div align="center"><b>코드블럭 3.2</b> </div><br>
  
 <p align="justify"></p>
  
