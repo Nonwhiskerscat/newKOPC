@@ -190,14 +190,94 @@ window.addEventListener('load',function(){
 
 ### 뷰포트에 따른 css 애니메이션
 ``` JavaScript
+$(window).on("load", function () {
+    function fade() {
+      let animation_height = $(window).innerHeight() * 0.5;
+      let ratio = Math.round((1 / animation_height) * 10000) / 10000;
+        $(".fadeL").each(function () {
+        let objectTop = $(this).offset().top;
+        let windowBottom = $(window).scrollTop() + $(window).innerHeight();
+        if (objectTop < windowBottom) {
+        if (objectTop < windowBottom - animation_height) {
+            $(this).css({
+                transition: "opacity 1s ease-out",
+                transition: "right 1s ease-out",
+                opacity: 1,
+                right: "0px",
+            });
+            } else {
+            $(this).css({
+                transition: "opacity 1s ease-out",
+                opacity: (windowBottom - objectTop) * ratio,
+                transition: "right 1s ease-out",
+                right: `${1920 * (1 - (windowBottom - objectTop) * ratio)}px`,
+            });
+            }
+        } else {
+            $(this).css({
+            opacity: 0,
+            right: "1920px",
+            });
+        }
+        });
+    }
+    $(".fadeL").css({
+        opacity: 0,
+        right: "1920px",
+    });
+    fade();
 
+    $(window).scroll(function () {
+        fade();
+    });
+});
 ```
-<div align="center"><b>코드블럭 3.1</b> </div><br>
+<div align="center"><b>코드블럭 3.1</b>뷰포트에 따라 왼쪽에서 오른쪽으로 이동하는 효과</div><br>
 
 ``` JavaScript
+$(window).on("load", function () {
+    function fade() {
+        let animation_height = $(window).innerHeight() * 0.5;
+        let ratio = Math.round((1 / animation_height) * 10000) / 10000;
+        $(".fadeB").each(function () {
+        let objectTop = $(this).offset().top;
+        let windowBottom = $(window).scrollTop() + $(window).innerHeight();
+        if (objectTop < windowBottom) {
+        if (objectTop < windowBottom - animation_height) {
+            $(this).css({
+                transition: "opacity 1s ease-out",
+                transition: "top 1s ease-out",
+                opacity: 1,
+                top: "0px",
+            });
+            } else {
+            $(this).css({
+                transition: "opacity 1s ease-out",
+                opacity: (windowBottom - objectTop) * ratio,
+                transition: "top 1s ease-out",
+                top: `${600 * (1 - (windowBottom - objectTop) * ratio)}px`,
+            });
+            }
+        } else {
+            $(this).css({
+            opacity: 0,
+            top: "600px",
+            });
+        }
+        });
+    }
+    $(".fadeB").css({
+        opacity: 0,
+        top: "600px",
+    });
+    fade();
 
+    $(window).scroll(function () {
+        fade();
+    });
+});
 ```
-<div align="center"><b>코드블럭 3.2</b> </div><br>
+<div align="center"><b>코드블럭 3.2</b>뷰포트에 따라 아래에서 위로 이동하는 효과</div><br>
  
 <p align="justify"></p>
  
