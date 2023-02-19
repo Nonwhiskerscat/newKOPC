@@ -279,7 +279,9 @@ $(window).on("load", function () {
 ```
 <div align="center"><b>코드블럭 3.2</b>뷰포트에 따라 아래에서 위로 이동하는 효과</div><br>
  
-<p align="justify"></p>
+<p align="justify">
+
+</p>
  
 <br>
 
