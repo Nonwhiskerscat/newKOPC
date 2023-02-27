@@ -468,7 +468,19 @@ window.onload=function(){
 
 ## 최종 시안
 
+<details>
+  <summary><h3>다크모드 </h3></summary>
+   <div align="center">
+    <img width=100% src="https://user-images.githubusercontent.com/114633489/221568907-275a018b-0e1d-4c73-b7a6-de8df6233e87.png">
+  </div>
+</details>
 
+<details>
+  <summary><h3>라이트모드 </h3></summary>
+   <div align="center">
+    <img width=100% src="https://user-images.githubusercontent.com/114633489/221568931-1251eb0d-0b4a-4bbc-abf9-772691f60683.png">
+  </div>
+</details>
 
 ## 마무리 인사
   
