@@ -383,27 +383,71 @@ window.onload=function(){
 
 ### 후원 및 챌린지
 
-<p align="justify"></p>
+<div align="center">
+  <img width="80%" src="https://user-images.githubusercontent.com/114633489/221553727-b569aeeb-beb9-4155-842a-2226922e0b09.gif">
+  <p align="center"><b>사진 5</b> 리뉴얼 된 사이트의 후원+챌린지 부분</p>
+</div>
+
+<p align="justify">기존 페이지 한 켠에 광고처럼 있었던 후원 부분을 하나의 섹션으로 독립시켰습니다. 그리고 기존에 서브페이지에 게재된 고양이 보호협회의 역할을 메인 페이지에 배치 시킴으로써 고보협이 어떤 일을 도맡하 하는 지에 대해 명시하였습니다.</p>
 
 <hr>
 
 ### 포토존 및 뉴스존
 
-<p align="justify"></p>
+<div align="center">
+  <img width="80%" src="https://user-images.githubusercontent.com/114633489/221553733-7aa8bc15-2c4b-412e-8866-6fad9051eb68.gif">
+  <p align="center"><b>사진 6</b> 리뉴얼 된 사이트의 포토존+뉴스존 부분</p>
+</div>
+
+<p align="justify">기존 페이지에서는 전체 메인 페이지에서 이 부분이 차지하는 비율이 적었는데, 리뉴얼 이후, 그 비율을 높였습니다. 특히, 해당 부분에는 고양이 모양의 일러스트를 활용하여 보는 이에 친근감을 부여하였습니다.</p>
 
 <hr>
 
 ### 커뮤니티
 
-<p align="justify"></p>
+
+<div align="center">
+  <img width="80%" src="https://user-images.githubusercontent.com/114633489/221553733-7aa8bc15-2c4b-412e-8866-6fad9051eb68.gif">
+  <p align="center"><b>사진 7</b> 리뉴얼 된 사이트의 커뮤니티 부분</p>
+</div>
+
+<p align="justify">진부한 레이아웃과 단순한 글자 정렬로 구성된 커뮤니티 또한 고양이 사진을 활용하여 업그레이드 하였고, 글자 또한 화면 확대 없이 한 눈에 볼 수 있도록 키워 가독성을 높였습니다.</p>
 
 <hr>
 
 ### 푸터
 
-<p align="justify"></p>
+<div align="center">
+  <img width="80%" src="https://user-images.githubusercontent.com/114633489/221555313-5acf3d9c-cf71-4bbb-87ad-1002eca86509.png">
+  <p align="center"><b>사진 8</b> 리뉴얼 된 사이트의 푸터 부분</p>
+</div>
+
+<p align="justify">footer 부분은 기존의 사이트에 톤앤 매너를 아이덴티티 컬러로 업그레이드 하였고, 후원 문의 form을 추가하여 기존 사이트에 비해 접근성을 한 층 강화시켰습니다. 그리고 고양이 보호협회 공식 인스타그램 사진 및 게시물을 푸터 하단에 추가하여 SNS과의 접근성도 한층 더 높였습니다.</p>
 
 <hr>
+
+### Alert 메시지
+
+<div align="center">
+  <img width="80%" src="https://user-images.githubusercontent.com/114633489/221553722-3d4d9d87-7ca4-49fe-9149-2b383e16eb10.gif">
+  <p align="center"><b>사진 9</b> 리뉴얼 된 사이트의 Alert 메시지</p>
+</div>
+
+<p align="justify">footer 부분은 기존의 사이트에 톤앤 매너를 아이덴티티 컬러로 업그레이드 하였고, 후원 문의 form을 추가하여 기존 사이트에 비해 접근성을 한 층 강화시켰습니다. 그리고 고양이 보호협회 공식 인스타그램 사진 및 게시물을 푸터 하단에 추가하여 SNS과의 접근성도 한층 더 높였습니다.</p>
+
+<hr>
+
+### 다크모드 라이트모드
+
+<div align="center">
+  <img width="80%" src="https://user-images.githubusercontent.com/114633489/221553699-10d75cf2-a2a0-4c67-b3a6-b73729326b60.gif">
+  <p align="center"><b>사진 6</b> 리뉴얼 된 사이트의 다크모드 혹은 라이트모드</p>
+</div>
+
+<p align="justify">footer 부분은 기존의 사이트에 톤앤 매너를 아이덴티티 컬러로 업그레이드 하였고, 후원 문의 form을 추가하여 기존 사이트에 비해 접근성을 한 층 강화시켰습니다. 그리고 고양이 보호협회 공식 인스타그램 사진 및 게시물을 푸터 하단에 추가하여 SNS과의 접근성도 한층 더 높였습니다.</p>
+
+<hr>
+
 
 ## 프로젝트 후기
 
