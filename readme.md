@@ -21,6 +21,7 @@
   - [웹키트를 활용한 스크롤바 스타일링](#웹키트를-활용한-스크롤바-스타일링)
   - [숫자 카운팅 효과](#숫자-카운팅-효과)
   - [뷰포트에 따른 css 애니메이션](#뷰포트에-따른-css-애니메이션)
+  - [Alert 플러그인](#alert-플러그인)
 - [최종 결과물](#최종-결과물)
   - [로고](#로고)
   - [헤더 및 인트로](#헤더-및-인트로)
@@ -28,6 +29,8 @@
   - [포토존 및 뉴스존](#포토존-및-뉴스존)
   - [커뮤니티](#커뮤니티)
   - [푸터](#푸터)
+  - [Alert 메시지](#alert-메시지)
+  - [다크모드 라이트모드](#다크모드-)
 - [최종 시안](#최종-시안)
 - [프로젝트 후기](#프로젝트-후기)
 - [마무리 인사](#마무리-인사)
@@ -281,8 +284,47 @@ $(window).on("load", function () {
  오브젝트의 Y좌표와 스크롤의 Y좌표를 비교하면서 해당 뷰포트 좌표에 도달했을 때, 투명도가 점점 짙어지고, 오브젝트가 뷰포트 내에 들어오는 효과를 부여하였습니다. 이를 구현하기 위해 animate() 함수를 사용하였습니다. 사실 이 코드는 코드펜을 통해 외부에서 긁어온 코드라 제 코드에 맞게 커스터마이징 하는 데에 시간이 좀 걸렸습니다...
 </p>
  
-<br>
+<hr>
 
+### Alert 플러그인
+``` JavaScript
+window.onload=function(){
+    document.onselectstart = function(e) {
+        Swal.fire({
+            title: "<h5 style='color:#e7a335'>" + '텍스트 도둑질 금지!' + "</h5>",
+            html: "<p style='color:#fff; font-size:18px'>"+'텍스트 퍼가려다 나한테 제대로 걸렸냥? <br>한 번만 더 걸리면 가만 안 둔다냥! ฅ(=ↀДↀ=)ฅ'+"</p>",
+            imageUrl: './img/기타/alert1(다크).png',
+            imageWidth: '200px',
+            imageHeight: '200px',
+            imageAlt: 'Custom image',
+            background: '#333333',
+            confirmButtonColor: '#e7a335',
+            font: '#fff'
+        })
+        return false;
+    }
+
+
+    document.oncontextmenu = function (e) {
+        Swal.fire({
+            title: "<h5 style='color:#e7a335'>"+'오른쪽 마우스 클릭 금지!'+"</h5>",
+            html: "<p style='color:#fff; font-size:18px'>"+'이미지 훔쳐 가지 말고 <br>우리 길고양이들 후원 좀 해주라냥! ฅ(=ↀᴥↀ=)ฅ'+"</p>",
+            imageUrl: './img/기타/alert1(다크).png',
+            imageWidth: '200px',
+            imageHeight: '200px',
+            imageAlt: 'Custom image',
+            background: '#333333',
+            confirmButtonColor: '#e7a335'
+        })
+        return false;
+    }
+}
+```
+<div align="center"><b>코드블럭 4</b> BlockMouse.js 코드 중 좌클릭 혹은 우클릭 이벤트 시 발생하는 함수를 구현한 코드</div><br>
+
+<p align="justify">이미지 및 텍스트 불펌을 방지하기 위해 <b>sweet alert</b> 플러그인을 활용하여 마우스 좌클릭 혹은 우클릭 시 Alert 창을 생성하며 prevent defalut 효과를 주었습니다. <s>이거 제작할 당시에는 코딩 1개월차 코린이라서 외부 플러그인을 사용할 수 밖에 없었다는 것은 안 비밀...</s></p>
+ 
+<br>
           
 
 ## 최종 결과물
@@ -331,21 +373,11 @@ $(window).on("load", function () {
           
 ### 헤더 및 인트로
 <div align="center">
-  <table width="100%">
-    <tr>
-      <th width="10%">구분</th>
-      <th width="45%">기존</th>
-      <th width="45%">변경안</th>     
-    </tr>
-    <tr>
-      <th>페이지</th>
-      <td><img width="100%" src=""></td>
-      <td><img width="100%" src=""></td>      
-    </tr>
-  </table>
+  <img width="80%" src="https://user-images.githubusercontent.com/114633489/221553742-64d68a0d-9fbf-4b1f-87d8-176d255292f2.gif">
+  <p align="center"><b>사진 4</b> 리뉴얼 된 사이트의 헤더+인트로 부분</p>
 </div>
 
-<p align="justify">헤더 부분 혹은 인트로 부분은 <b>인간과 고양이가 공존하는 모습이 담긴 사진</b>을 선정하여 타이틀 포토로 선정했습니다. 그리고 GNB와 같은 경우 마우스 Hover 시 일부 메뉴만 펼쳐지는 기존 페이지와 달리 <b>리뉴얼 페이지에서는 전체 페이지가 펼쳐지도록 수정</b>하였습니다. 그리고 구석에 게재되어 있던 회원 수 정보를 인트로 부분으로 옮겼고, 숫자 카운팅 효과를 추가하여 역동성을 부여하였고 리뉴얼 된 로고를 중앙 상단에 배치하여 고양이 보호협회 홈페이지의 정체성을 뚜렷하게 부여하였습니다.</p>
+<p align="justify"><s>사진 화질 실화가...</s> 헤더 부분 혹은 인트로 부분은 <b>인간과 고양이가 공존하는 모습이 담긴 사진</b>을 선정하여 타이틀 포토로 선정했습니다. 그리고 GNB와 같은 경우 마우스 Hover 시 일부 메뉴만 펼쳐지는 기존 페이지와 달리 <b>리뉴얼 페이지에서는 전체 페이지가 펼쳐지도록 수정</b>하였습니다. 그리고 구석에 게재되어 있던 회원 수 정보를 인트로 부분으로 옮겼고, 숫자 카운팅 효과를 추가하여 역동성을 부여하였고 리뉴얼 된 로고를 중앙 상단에 배치하여 고양이 보호협회 홈페이지의 정체성을 뚜렷하게 부여하였습니다.</p>
 
 <hr>
 
